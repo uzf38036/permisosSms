@@ -6,37 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/tvSentMessage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.422"
-        tools:text="Mensaje enviado" />
-
     <EditText
         android:id="@+id/etMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
         android:ems="10"
         android:gravity="start|top"
-        android:hint="Escribe tu mensaje"
+        android:hint="@string/message_hint"
         android:inputType="textMultiLine"
-        app:layout_constraintEnd_toEndOf="@+id/tvSentMessage"
-        app:layout_constraintTop_toBottomOf="@+id/tvSentMessage" />
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnSend"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="ENVÍAR"
+        android:text="@string/btn_send"
         app:layout_constraintEnd_toEndOf="@+id/etPhoneNumber"
         app:layout_constraintStart_toStartOf="@+id/etPhoneNumber"
         app:layout_constraintTop_toBottomOf="@+id/etPhoneNumber" />
@@ -47,10 +36,31 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:ems="10"
-        android:hint="Escribe número de destinatario"
+        android:hint="@string/phonenumber_hint"
         android:inputType="phone"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="@+id/etMessage"
         app:layout_constraintStart_toStartOf="@+id/etMessage"
         app:layout_constraintTop_toBottomOf="@+id/etMessage" />
+
+    <TextView
+        android:id="@+id/tvMensaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/lbl_message"
+        app:layout_constraintBottom_toBottomOf="@+id/etMessage"
+        app:layout_constraintEnd_toStartOf="@+id/etMessage"
+        app:layout_constraintTop_toTopOf="@+id/etMessage" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/lbl_phone_number"
+        app:layout_constraintBottom_toBottomOf="@+id/etPhoneNumber"
+        app:layout_constraintEnd_toStartOf="@+id/etPhoneNumber"
+        app:layout_constraintTop_toTopOf="@+id/etPhoneNumber" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

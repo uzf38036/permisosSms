@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">SMS_permisos</string>
+    <string name="message_hint">Write a messsage</string>
+    <string name="phonenumber_hint">Write a phone number</string>
+    <string name="btn_send">Enviar</string>
+    <string name="lbl_message">MESSSAGE:</string>
+    <string name="lbl_phone_number">NUMBER:</string>
+
+<!--    textos en java-->
+    <string name="explanation">without peermission you are not allowed to send SMS.</string>
+    <string name="requestPermTitle">Permission request</string>
+    <string name="sent_confirmation">SMS sent</string>
+    <string name="empty_error_messg">Please enter a phone number and message</string>
+    <string name="alert_permission_denied">SMS permission was denied</string>
+
 </resources>
